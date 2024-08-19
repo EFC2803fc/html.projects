@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet');
+body{background-color: #000000;}
+*.bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+nav {
+    display: flex;
+    padding: 2% 6%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+}
+.list {
+    font-size: 22px;
+    flex: 20;
+    text-align: right;
+}
+.list ul li {
+    position: relative;
+    list-style: none;
+    padding: 8px 12px;
+    display: inline-block;
+}
+.list ul li a {
+    color:#1100ff;
+    font-family: "Bungee", sans-serif;
+    text-decoration: noneBebas Neue;
+    transition: 0.5s;
+}
+.active{
+    color:#1100ff !important;
+    font-family: "Bungee", sans-serif;
+}
+.text {
+    color:#1100ff;
+    max-width: 700px;
+    padding: 40px 80px;
+}
+.text h2 {
+    color:#ffffff;
+    font-size: 50px;
+    font-family: "Bungee", sans-serif;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.text span {
+    color:#1100ff;
+    font-family: "Bungee", sans-serif;
+    font-weight: 900;
+}
+.text p {
+    padding: 15px 35px;
+    color:#1100ff;
+    font-family: "Bungee", sans-serif;
+}
+.btn {
+    padding: 15px 35px;
+    background: linear-gradient(#0000ff,#000000);
+    font-family: "Bungee", sans-serif;
+    color:#ffffff;
+    border:0;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: 0.2s;
+}
+.btn:hover{
+    letter-spacing: 10px;
+}
+.img{
+    position: absolute;
+    right: 0;
+    top:100px;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img{
+    width: 25%;
+    margin-right: 5%;
+    margin-top: 5%;
+    animation: zoomIn 1s ease forwards,floatImage 2s ease-in-out infinite;
+    animation-delay: 5s, 2s;
+}
+.circle {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#0000ff,#000000);
+    clip-path: circle(650px at right 830px);
+}
+@keyframes  slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes  zoomIn {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
